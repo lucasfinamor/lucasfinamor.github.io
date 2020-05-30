@@ -11,8 +11,13 @@ redirect_from:
 
 ### Yale University (Teaching Assistant)
 
-* Introduction to Microeconomics (Undergraduate level), Instructor Cormac O'Dea (Spring 2020)
-* Intermediate Dana Analysis and Econometrics (Undergraduate level), Instructor Costas Meghir (Fall 2019)
+| Course           | Level  | Instructor | Years
+| --------         | ------ | ------------------------------------------------------------ |
+| Introduction to Microeconomics   | Undergaduate   | Cormac O'Dea | Spring 2020
+| Intermediate Data Analysis and Econometrics   | Undergaduate   | Costas Meghir | Fall 2019
+
+#* Introduction to Microeconomics (Undergraduate level), Instructor Cormac O'Dea (Spring #2020)
+#* Intermediate Dana Analysis and Econometrics (Undergraduate level), Instructor Costas #Meghir (Fall 2019)
 
 ### Sao Paulo School of Economics, FGV - EESP/FGV (Teaching Assistant)
 
