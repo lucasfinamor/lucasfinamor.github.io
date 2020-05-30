@@ -1,7 +1,7 @@
 ---
 layout: archive
 #title: "CV"
-permalink: /teachingL/
+permalink: /teaching/
 author_profile: true
 redirect_from:
   - /resume
@@ -9,16 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Graduate Student, Economics, Yale University, USA 
-* MPhill, M.A., Economics, Yale University, USA, 2020
-* M.A., Economics, Sao Paulo School of Economics - FGV, Brazil, 2017
-* B.A., Economics, FEA - USP,  Brazil, 2014
-
-
-CV
-=====
-CV file in english [pdf()]
-CV files in portuguese [lattes]
-
+Test
