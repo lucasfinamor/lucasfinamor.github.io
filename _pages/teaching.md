@@ -11,16 +11,16 @@ redirect_from:
 
 ### Yale University (Teaching Assistant)
 
-| Course           | Level  | Instructor | Years
-| --------         | ------ | ------------------------------------------------------------ |
-| Introduction to Microeconomics   | Undergaduate   | Cormac O'Dea | Spring 2020
-| Intermediate Data Analysis and Econometrics   | Undergaduate   | Costas Meghir | Fall 2019
+| Course | Level  | Instructor | Years
+| -------- | ------ | ------------------------------------------------------------ |
+| Introduction to Microeconomics   | Undergraduate   | Cormac O'Dea | Spring 2020
+| Intermediate Data Analysis and Econometrics   | Undergraduate   | Costas Meghir | Fall 2019
 
-#* Introduction to Microeconomics (Undergraduate level), Instructor Cormac O'Dea (Spring #2020)
-#* Intermediate Dana Analysis and Econometrics (Undergraduate level), Instructor Costas #Meghir (Fall 2019)
 
 ### Sao Paulo School of Economics, FGV - EESP/FGV (Teaching Assistant)
 
-* Microeconometrics I and II (PhD and MA Level), Instructors Bruno Ferman and André Portela (2016)  
-* Microeconometrics (Professional MA Level), Instructor Priscilla Tavares (2016 and 2017)   
-* Econometrics I and III (Undergraduate Level), Instructor Cristine Pinto (2016 and 2017)   
+| Course | Level  | Instructor | Years
+| -------- | ------ | ------------------------------------------------------------ |
+| Microeconometris I and II   | PhD and MA   | Bruno Ferman and André Portela | 2016
+| Microeconometric  | Professional MA   | Priscilla Tavares | 2016 and 2017 
+| Econometrics I and III | Undergraduate | Cristine Pinto | 2016 and 2017 
