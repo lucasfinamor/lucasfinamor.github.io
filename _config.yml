@@ -149,7 +149,7 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
+encoding: "UFT-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
@@ -310,4 +310,4 @@ compress_html:
   ignore:
     envs: development
 
-encoding: UTF-8
+encoding: "UFT-8"
