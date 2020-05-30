@@ -19,6 +19,6 @@ Education
 
 CV
 =====
-CV file in english [pdf()]
+CV file in english [pdf]
 CV files in portuguese [lattes]
 
