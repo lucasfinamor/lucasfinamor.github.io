@@ -19,7 +19,7 @@ Education
 
 CV
 =====
-CV file in english [pdf](https://lucasfinamor.github.io/files/cv_lucasfinamor.pdf){:target="_blank" rel="noopener"}
+CV file in english \[[pdf](https://lucasfinamor.github.io/files/cv_lucasfinamor.pdf){:target="_blank" rel="noopener"}\]
 
-CV files in portuguese [lattes](http://lattes.cnpq.br/3355999034844262)
+CV files in portuguese \[[lattes](http://lattes.cnpq.br/3355999034844262){:target="_blank" rel="noopener"}\]
 
