@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+#title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -19,6 +19,7 @@ Education
 
 CV
 =====
-CV file in english [pdf]
-CV files in portuguese [lattes]
+CV file in english [pdf](cv_lucasfinamor.pdf)
+
+CV files in portuguese [lattes](http://lattes.cnpq.br/3355999034844262)
 
