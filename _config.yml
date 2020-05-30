@@ -83,12 +83,12 @@ author:
   name             : "Lucas Finamor"
   avatar           : "lf_pic.jpg"
   bio              : "PhD candidate in economics at Yale University"
- # location         : "Location"
+  location         : "New Haven, CT - USA"
   employer         :
- # pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
- # googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            :
- # researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  email            :  "lucas.finamor@yale.edu"
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
