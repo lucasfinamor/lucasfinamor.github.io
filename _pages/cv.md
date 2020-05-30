@@ -9,14 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-CV
-=====
-* CV file in english \[[pdf](https://lucasfinamor.github.io/files/cv_lucasfinamor.pdf){:target="_blank" rel="noopener"}\]
+### CV
+
+* CV file in english \[[pdf](https://lucasfinamor.github.io/files/cv_lucasfinamor.pdf){:target="_blank" rel="noopener"}\]  
 * CV files in portuguese \[[lattes](http://lattes.cnpq.br/3355999034844262){:target="_blank" rel="noopener"}\]
 
 
-Education
-======
+### Education
+
 * Graduate Student, Economics, Yale University, USA 
 * MPhill, M.A., Economics, Yale University, USA, 2020
 * M.A., Economics, Sao Paulo School of Economics - FGV, Brazil, 2017
