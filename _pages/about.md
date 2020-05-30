@@ -8,5 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Lucas Finamor and I'm a PhD candidate in Economics at Yale University. I'm interested in Labor Economics, particularly in developing countries. 
+My name is Lucas Finamor and I'm a PhD candidate in Economics at Yale University. 
+
+I'm interested in Labor Economics, particularly in developing countries. 
 
