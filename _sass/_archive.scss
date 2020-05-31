@@ -15,6 +15,7 @@
   }
 
   a {
+    color: inherit;
     text-decoration: underline;
 
     &:hover {
@@ -80,7 +81,6 @@
   }
 
   .archive__item-title {
-    color: inherit;
     text-decoration: underline;
   }
 }
