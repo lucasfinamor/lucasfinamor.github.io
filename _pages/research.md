@@ -5,7 +5,6 @@ permalink: /research/
 author_profile: true
 redirect_from:
   - /resume
-urlcolor: black
 ---
 
 {% include base_path %}
