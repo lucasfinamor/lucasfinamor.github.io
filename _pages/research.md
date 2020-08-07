@@ -11,7 +11,7 @@ redirect_from:
 
 ### Working Papers
 
-[Are Public Schools Ready to Integrate Math Classes with Khan Academy?](https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf){:target="_blank" rel="noopener"} <p style="font-family: times, serif; font-size:9pt; font-style:italic"> (with <a href="https://sites.google.com/site/brunoferman">Bruno Ferman</a> and 
+[Are Public Schools Ready to Integrate Math Classes with Khan Academy?](https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf){:target="_blank" rel="noopener"} <font style=font-family: times, serif; font-size:9pt; font-style:italic> (with <a href="https://sites.google.com/site/brunoferman">Bruno Ferman</a> and 
 <a href="https://sites.google.com/view/lycia-lima">Lycia Lima</a>) </p> 
 
 
