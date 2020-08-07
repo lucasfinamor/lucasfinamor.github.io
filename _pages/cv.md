@@ -18,7 +18,7 @@ redirect_from:
 ### Education
 
 * **Graduate Student**, Economics, *Yale University*, USA 
-* **MPhil**, **M.A.**, Economics, *Yale University*, USA, 2020
+* **M.Phil**, **M.A.**, Economics, *Yale University*, USA, 2020
 * **M.A.**, Economics, *Sao Paulo School of Economics - FGV*, Brazil, 2017
 * **B.A.**, Economics, *FEA - USP*,  Brazil, 2014
 
