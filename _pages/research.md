@@ -12,7 +12,9 @@ fontsize: 12pt
 
 ### Working Papers
 
-[Are Public Schools Ready to Integrate Math Classes with Khan Academy?](https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf){:target="_blank" rel="noopener"} <p style="font-size:9pt;">(with <a href="https://sites.google.com/site/brunoferman">Bruno Ferman</a> and <a href="https://sites.google.com/view/lycia-lima">Lycia Lima</a>)</p> 
+[Are Public Schools Ready to Integrate Math Classes with Khan Academy?](https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf){:target="_blank" rel="noopener"} 
+
+<p style="font-size:9pt;">(with <a href="https://sites.google.com/site/brunoferman">Bruno Ferman</a> and <a href="https://sites.google.com/view/lycia-lima">Lycia Lima</a>)</p> 
 
 
 
