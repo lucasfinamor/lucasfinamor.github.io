@@ -20,7 +20,7 @@ fontsize: 11pt
 <span style="font-size:9pt;"> In response to the Covid-19 pandemic, the United States enacted the CARES Act, which expanded unemployment insurance (UI) benefits by providing a $600 weekly payment in addition to state un- employment benefits. We test whether changes in UI benefit generosity are associated with decreased employment, both at the onset of the benefits expansion and as businesses began to reopen. We use data from Homebase, a private firm that provides scheduling and time clock software to small businesses, which allows us to exploit high-frequency observations to understand how firms and workers respond to policy changes in real time. While our results show that relative declines in employment and hours occurred in mid-March, we find that the workers with higher post-CARES replacement rates did not experience larger declines in employment or hours of work when the benefits expansion went into effect. They have also returned to their previous jobs over time at similar rates as others.
 </span>
 </details>
-</TD>
+</TD><br />
 
 
 <TD style="LINE-HEIGHT:20px;">
