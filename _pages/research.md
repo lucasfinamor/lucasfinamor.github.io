@@ -22,9 +22,7 @@ fontsize: 11pt
 </details>
 </TD>
 
-<TD style="LINE-HEIGHT:50px;">
-
-</TD>
+&nbsp;
 
 <TD style="LINE-HEIGHT:20px;">
 <a href="https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf" target="_blank">Are Public Schools Ready to Integrate Math Classes with Khan Academy?</a><span style="font-size:10pt;"> (with <a href="https://sites.google.com/site/brunoferman" target="_blank">Bruno Ferman</a> and <a href="https://sites.google.com/view/lycia-lima" target="_blank">Lycia Lima</a>) </span> 
