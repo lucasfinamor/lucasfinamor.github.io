@@ -13,7 +13,7 @@ fontsize: 11pt
 ### Working Papers
 
 <TD style="LINE-HEIGHT:20px;">
-<a href="https://lucasfinamor.github.io/files/finamor_scott_UI.pdf" target="_blank">Employment Effects of Unemployment Insurance Generosity During the Pandemic</a><span style="font-size:10pt;"> (with Dana Scott) </span> 
+<a href="https://mpra.ub.uni-muenchen.de/102390/" target="_blank">Employment Effects of Unemployment Insurance Generosity During the Pandemic</a><span style="font-size:10pt;"> (with Dana Scott) </span> 
 <details>
   <summary><span style="font-size:9pt;">[Abstract]</span></summary>
   
