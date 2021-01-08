@@ -20,7 +20,7 @@ fontsize: 10pt
 
 ## Working Papers
 
-<a href="https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf" target="_blank" style="color:#2874A6">Are Public Schools in Developing Countries Ready to Integrate EdTech into Regular Instruction?</a> (with <a href="https://sites.google.com/site/brunoferman" target="_blank">Bruno Ferman</a> and <a href="https://sites.google.com/view/lycia-lima" target="_blank">Lycia Lima</a>) <span style="font-size:10pt;margin-left:30px"> 
+<a href="https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf" target="_blank" style="color:#2874A6">Are Public Schools in Developing Countries Ready to Integrate EdTech into Regular Instruction?</a> (with <a href="https://sites.google.com/site/brunoferman" target="_blank">Bruno Ferman</a> and <a href="https://sites.google.com/view/lycialima" target="_blank">Lycia Lima</a>) <span style="font-size:10pt;margin-left:30px"> 
 <a href="https://lucasfinamor.github.io/files/ferman_etal_ArePublicSchoolsReady.pdf" target="_blank">[Manuscript]</a>
 </span>
 
