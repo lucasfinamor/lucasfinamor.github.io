@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  google-analytics: "G-CJ9KSTW928"
+  site-url: https://lucasfinamor.github.io
+  title: "Lucas Finamor"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - cv.qmd
+      - research.qmd
+      - policy_reports.qmd
+      - teaching.qmd
+    right: 
+      - icon: google
+        href: https://scholar.google.com/citations?hl=en&user=L52go7EAAAAJ
+        target: _blank
+      - icon: twitter
+        href: https://www.twitter.com/finamor_lucas/
+        target: _blank
+      - icon: envelope
+        href: mailto:lucas.finamor@ifs.org.uk
+        target: _blank
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    grid:
+      sidebar-width: 10px
+    fontsize: 12pt
+    page-layout: full
+
+
+

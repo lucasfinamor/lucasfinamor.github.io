@@ -1,0 +1,30 @@
+---
+title: "Teaching"
+permalink: /teaching/
+---
+
+### Yale University (Teaching Assistant)
+
+| Course   | Level  | Instructor | Years  |
+| -------- | ------ | ---------- | ------ |
+| Introduction to Data Analysis and Econometrics   | Undergraduate   | Joseph Altonji | Spring 2023
+| Introduction to Microeconomics   | Undergraduate   | Cormac O'Dea | Spring 2020
+| Intermediate Data Analysis and Econometrics   | Undergraduate   | Costas Meghir | Fall 2019
+
+</br>
+
+### Sao Paulo School of Economics, FGV - EESP/FGV (Teaching Assistant)
+
+| Course | Level  | Instructor | Years |
+| -------- | ------ | -------- | ----- | 
+| Microeconometrics I and II   | PhD and MA   | Bruno Ferman and André Portela | 2016
+| Microeconometrics  | Professional MA   | Priscilla Tavares | 2016 and 2017 
+| Econometrics I and III | Undergraduate | Cristine Pinto | 2016 and 2017 
+
+</br>
+
+### Yale University (Mentoring)
+
+| Program | Level |Role | Years |
+| -------- | ---- | ------ | -------- |
+Herb Scarf Summer Research Opportunities in Economics| Undergraduate | Co-Director |  2020 and 2021

@@ -1,0 +1,27 @@
+---
+title: "Lucas Finamor"
+image: "files/lf_pic.jpg"
+page-layout: full
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - text: Google Scholar 
+      href: https://scholar.google.com/citations?hl=en&user=L52go7EAAAAJ
+      target: _blank
+    - text: Twitter 
+      href: https://www.twitter.com/finamor_lucas/
+      target: _blank
+    - text: Email 
+      href: mailto:lucas.finamor@ifs.org.uk
+      target: _blank
+---
+
+I'm a Post-doctoral Fellow at the <a href="https://ifs.org.uk" target="_blank">Institute for Fiscal Studies</a> for the 2023-2024 academic year.
+
+In August of 2024, I will join the <a href="https://economics-sp.fgv.br" target="_blank">São Paulo School of Economics</a> from Fundação Getulio Vargas (FGV) as an Assistant Professor.
+
+I'm interested in Labor Economics, Economics of Education, and Public Finance, particularly in developing countries.
+
+You can reach me at lucas.finamor\@ifs.org.uk

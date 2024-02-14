@@ -1,0 +1,6 @@
+
+cd /Users/lucasfinamor/Documents/GitHub/lucasfinamor.github.io
+
+quarto render
+
+cp -R files docs
