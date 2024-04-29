@@ -28,13 +28,6 @@
     "text": "I’m a Post-doctoral Fellow at the Institute for Fiscal Studies for the 2023-2024 academic year.\nIn August of 2024, I will join the São Paulo School of Economics from Fundação Getulio Vargas (FGV) as an Assistant Professor.\nI’m interested in Labor Economics, Economics of Education, and Public Finance, particularly in developing countries.\nYou can reach me at lucas.finamor@ifs.org.uk"
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Yale University (Teaching Assistant)\n\n\n\n\n\n\n\n\n\nCourse\nLevel\nInstructor\nYears\n\n\n\n\nIntroduction to Data Analysis and Econometrics\nUndergraduate\nJoseph Altonji\nSpring 2023\n\n\nIntroduction to Microeconomics\nUndergraduate\nCormac O’Dea\nSpring 2020\n\n\nIntermediate Data Analysis and Econometrics\nUndergraduate\nCostas Meghir\nFall 2019\n\n\n\n\n\n\nSao Paulo School of Economics, FGV - EESP/FGV (Teaching Assistant)\n\n\n\n\n\n\n\n\n\nCourse\nLevel\nInstructor\nYears\n\n\n\n\nMicroeconometrics I and II\nPhD and MA\nBruno Ferman and André Portela\n2016\n\n\nMicroeconometrics\nProfessional MA\nPriscilla Tavares\n2016 and 2017\n\n\nEconometrics I and III\nUndergraduate\nCristine Pinto\n2016 and 2017\n\n\n\n\n\n\nYale University (Mentoring)\n\n\n\n\n\n\n\n\n\nProgram\nLevel\nRole\nYears\n\n\n\n\nHerb Scarf Summer Research Opportunities in Economics\nUndergraduate\nCo-Director\n2020 and 2021"
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -61,6 +54,20 @@
     "title": "Research",
     "section": "Work in Progress",
     "text": "Work in Progress\n\n\n“There must be an error here! Experimental evidence on coding errors’ biases” (with Bruno Ferman).  \n\n\n(Abstract)\n\n\nEconomics research relies heavily on computational activities. Nonetheless, coding errors are widely present, even in papers that have gone through peer review processes. In this paper, we investigate whether researchers have differential probabilities for debugging their codes, depending on the results they face. We test this hypothesis in a randomized experiment in which common coding errors would lead to either expected or unexpected results. If researchers are less likely to look for coding errors when encountering non-favorable results, this implies a bias in the scientific inquiry.\n\n\n The RCT is currently being implemented. The pre-analysis plan was uploaded to AEA-RCT-Registry 0008312."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Yale University (Teaching Assistant)\n\n\n\n\n\n\n\n\n\nCourse\nLevel\nInstructor\nYears\n\n\n\n\nIntroduction to Data Analysis and Econometrics\nUndergraduate\nJoseph Altonji\nSpring 2023\n\n\nIntroduction to Microeconomics\nUndergraduate\nCormac O’Dea\nSpring 2020\n\n\nIntermediate Data Analysis and Econometrics\nUndergraduate\nCostas Meghir\nFall 2019\n\n\n\n\n\n\nSao Paulo School of Economics, FGV - EESP/FGV (Teaching Assistant)\n\n\n\n\n\n\n\n\n\nCourse\nLevel\nInstructor\nYears\n\n\n\n\nMicroeconometrics I and II\nPhD and MA\nBruno Ferman and André Portela\n2016\n\n\nMicroeconometrics\nProfessional MA\nPriscilla Tavares\n2016 and 2017\n\n\nEconometrics I and III\nUndergraduate\nCristine Pinto\n2016 and 2017\n\n\n\n\n\n\nYale University (Mentoring)\n\n\n\n\n\n\n\n\n\nProgram\nLevel\nRole\nYears\n\n\n\n\nHerb Scarf Summer Research Opportunities in Economics\nUndergraduate\nCo-Director\n2020 and 2021"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides",
+    "section": "",
+    "text": "“Labor Market Informality, Risk, and Public Insurance”\n\n[20min]\n\n\n[60min]\n\n\n[90min]"
   },
   {
     "objectID": "policy_reports.html",

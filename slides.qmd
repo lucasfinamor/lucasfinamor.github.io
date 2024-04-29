@@ -1,0 +1,21 @@
+---
+title: "Slides"
+permalink: /slides/
+---
+
+<style>
+  details{
+    padding: 7pt;
+  }
+details[open]{
+    background: #eeeeee;
+}
+</style>
+
+<ol>
+<li>"Labor Market Informality, Risk, and Public Insurance"
+<li><a href="https://lucasfinamor.github.io/files/lf_jmp_20min.pdf" target="_blank">[20min]</a></li>
+<li><a href="https://lucasfinamor.github.io/files/lf_jmp_60min.pdf" target="_blank">[60min]</a></li>
+<li><a href="https://lucasfinamor.github.io/files/lf_jmp_90min.pdf" target="_blank">[90min]</a></li>
+</li>
+</ol>
