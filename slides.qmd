@@ -15,9 +15,12 @@ details[open]{
 <ol>
 <li>"Labor Market Informality, Risk, and Public Insurance"
 <ul>
-<li><a href="https://lucasfinamor.github.io/files/lf_jmp_20min.pdf" target="_blank">[20min]</a></li>
-<li><a href="https://lucasfinamor.github.io/files/lf_jmp_60min.pdf" target="_blank">[60min]</a></li>
-<li><a href="https://lucasfinamor.github.io/files/lf_jmp_90min.pdf" target="_blank">[90min]</a></li>
+<li><a href="https://lucasfinamor.github.io/files/lf_jmp_20min.pdf" target="_blank">[Slides]</a></li>
+</ul>
+</li>
+<li>"The effects of a school management program on post-secondary education and labor market outcomes"
+<ul>
+<li><a href="https://lucasfinamor.github.io/files/pjf.pdf" target="_blank">[Slides]</a></li>
 </ul>
 </li>
 </ol>
