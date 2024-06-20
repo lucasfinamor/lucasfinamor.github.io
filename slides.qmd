@@ -18,9 +18,4 @@ details[open]{
 <li><a href="https://lucasfinamor.github.io/files/lf_jmp_20min.pdf" target="_blank">[Slides]</a></li>
 </ul>
 </li>
-<li>"The effects of a school management program on post-secondary education and labor market outcomes"
-<ul>
-<li><a href="https://lucasfinamor.github.io/files/pjf.pdf" target="_blank">[Slides]</a></li>
-</ul>
-</li>
 </ol>
