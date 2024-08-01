@@ -14,14 +14,14 @@ about:
       href: https://www.twitter.com/finamor_lucas/
       target: _blank
     - text: Email 
-      href: mailto:lucas.finamor@ifs.org.uk
+      href: mailto:lucas.finamor@fgv.br
       target: _blank
 ---
 
-I'm a Post-doctoral Fellow at the <a href="https://ifs.org.uk" target="_blank">Institute for Fiscal Studies</a> for the 2023-2024 academic year.
+I'm an Assistant Professor at the <a href="https://economics-sp.fgv.br" target="_blank">Sao Paulo School of Economics</a> from Getulio Vargas Foundation (FGV)
 
-In August of 2024, I will join the <a href="https://economics-sp.fgv.br" target="_blank">São Paulo School of Economics</a> from Fundação Getulio Vargas (FGV) as an Assistant Professor.
+Before joining FGV, I was a post-doctoral fellow at the <a href="https://ifs.org.uk" target="_blank">Institute for Fiscal Studies</a>, a graduate student at Yale University, and a student at University of Sao Paulo. 
 
 I'm interested in Labor Economics, Economics of Education, and Public Finance, particularly in developing countries.
 
-You can reach me at lucas.finamor\@ifs.org.uk
+You can reach me at lucas.finamor\@fgv.br
