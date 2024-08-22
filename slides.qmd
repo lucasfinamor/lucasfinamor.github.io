@@ -13,9 +13,9 @@ details[open]{
 </style>
 
 <ol>
-<li>"Youth Subjective Life Expectancy and Early Labor Market Choices"
+<li>"PJF"
 <ul>
-<li><a href="https://lucasfinamor.github.io/files/life_expectancy.pdf" target="_blank">[Slides]</a></li>
+<li><a href="https://lucasfinamor.github.io/pjf.pdf" target="_blank">[Slides]</a></li>
 </ul>
 </li>
 </ol>
