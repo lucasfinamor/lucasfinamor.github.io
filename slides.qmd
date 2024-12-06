@@ -13,9 +13,13 @@ details[open]{
 </style>
 
 <ol>
-<li>"PJF"
+<li>"RII"
 <ul>
-<li><a href="https://lucasfinamor.github.io/files/pjf.pdf" target="_blank">[Slides]</a></li>
+<li><a href="https://lucasfinamor.github.io/files/lf_jmp_20min.pdf" target="_blank">[Slides]</a></li>
+</ul>
+<li>"Mesa"
+<ul>
+<li><a href="https://lucasfinamor.github.io/files/sbe_clear.pdf" target="_blank">[Slides]</a></li>
 </ul>
 </li>
 </ol>
