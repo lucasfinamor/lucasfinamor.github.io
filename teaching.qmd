@@ -3,6 +3,15 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
+### Sao Paulo School of Economics, FGV - EESP/FGV 
+
+| Course   | Level  |  Years  |
+| -------- | ------ | ------ |
+| Computational Methods for Economics  | Graduate   | 2025
+| Microeconomics  | Undergraduate   | 2025
+| Labor Economics  | Undergraduate   | 2025
+
+<!--
 ### Yale University (Teaching Assistant)
 
 | Course   | Level  | Instructor | Years  |
@@ -28,3 +37,4 @@ permalink: /teaching/
 | Program | Level |Role | Years |
 | -------- | ---- | ------ | -------- |
 Herb Scarf Summer Research Opportunities in Economics| Undergraduate | Co-Director |  2020 and 2021
+-->
