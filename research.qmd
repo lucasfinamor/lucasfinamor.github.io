@@ -38,7 +38,7 @@ We test whether changes in unemployment insurance (UI) benefit generosity under 
 ## Working Papers
 
 <ol>
-<li>"Labor Market Informality, Risk, and Insurance", <i>March 2025</i>. <span style="font-size:11pt;color:blue">  <span style="margin-left:10px"> <a href="https://lucasfinamor.github.io/files/Finamor_Lucas_JMP.pdf" target="_blank">[Manuscript]</a> </span>   </span>
+<li>"Labor Market Informality, Risk, and Insurance", <i>September 2025</i>. <span style="font-size:11pt;color:blue">  <span style="margin-left:10px"> <a href="https://lucasfinamor.github.io/files/Finamor_Lucas_JMP.pdf" target="_blank">[Manuscript]</a> </span>   </span>
 <details> <summary style="font-size:10pt"><i>(Abstract) </i></summary> 
 <p style="font-size:10pt" align="justify"> 
   Distinct working arrangements offer different prospects for workers. Formal employment provides insurance requiring contributions and taxes. Informal and self-employment lack insurance but offer faster exits from unemployment. Workers face complex tradeoffs involving present and future risks, insurance, liquidity, and earnings.
