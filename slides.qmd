@@ -13,9 +13,9 @@ details[open]{
 </style>
 
 <ol>
-<li>"FLS"
+<li>"Coding Bias"
 <ul>
-<li><a href="https://lucasfinamor.github.io/files/FLS.pdf" target="_blank">[Slides]</a></li>
+<li><a href="https://lucasfinamor.github.io/files/coding_bias_slides.pdf" target="_blank">[Slides]</a></li>
 </ul>
 </li>
 </ol>
