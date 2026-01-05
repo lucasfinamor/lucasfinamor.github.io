@@ -18,7 +18,7 @@ about:
       target: _blank
 ---
 
-I'm an Assistant Professor at the <a href="https://economics-sp.fgv.br" target="_blank">Sao Paulo School of Economics</a> from Getulio Vargas Foundation (FGV)
+I'm an Assistant Professor at the <a href="https://economics-sp.fgv.br" target="_blank">Sao Paulo School of Economics</a> from Getulio Vargas Foundation (FGV). I am also a Research Associate at the <a href="https://ifs.org.uk" target="_blank">Institute for Fiscal Studies</a>.
 
 Before joining FGV, I was a post-doctoral fellow at the <a href="https://ifs.org.uk" target="_blank">Institute for Fiscal Studies</a>, a graduate student at Yale University, and a student at University of Sao Paulo. 
 
