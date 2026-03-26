@@ -32,7 +32,7 @@ format:
     toc: true
     grid:
       sidebar-width: 10px
-    fontsize: 12pt
+    fontsize: 13pt
     page-layout: full
 
 

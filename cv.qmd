@@ -3,8 +3,8 @@ title: "CV"
 permalink: /cv/
 ---
 
-* CV [<a href="https://lucasfinamor.github.io/files/cv_lucasfinamor.pdf" target="_blanl">PDF</a>]
-* In Portuguese [<a href="http://lattes.cnpq.br/3355999034844262" target="_blanl">Lattes</a>]
+* CV [<a href="https://lucasfinamor.github.io/files/cv_lucasfinamor.pdf" target="_blank">PDF</a>]
+* In Portuguese [<a href="http://lattes.cnpq.br/3355999034844262" target="_blank">Lattes</a>]
 
 ## Employment 
 

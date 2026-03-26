@@ -7,8 +7,8 @@ permalink: /teaching/
 
 | Course   | Level  |  Years  |
 | -------- | ------ | ------ |
-| Computational Methods for Economics  | Graduate   | 2025
-| Microeconomics  | Undergraduate   | 2025
+| Computational Methods for Economics  | Graduate   | 2025--2026
+| Microeconomics  | Undergraduate   | 2025--2026
 | Labor Economics  | Undergraduate   | 2025
 
 <!--

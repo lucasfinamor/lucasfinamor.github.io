@@ -1,1 +1,92 @@
 /* css styles */
+
+
+/* Paper list spacing */
+ol li {
+  margin-bottom: 0.7rem;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.badge-rr {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+}
+
+.badge-accepted {
+  background-color: #d1e7dd;
+  color: #0a5c3f;
+  border: 1px solid #198754;
+}
+
+.badge-submitted {
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #adb5bd;
+}
+
+.badge-datacollection {
+  background-color: #e0cffc;
+  color: #4a2d82;
+  border: 1px solid #9c6fde;
+}
+
+.badge-draft {
+  background-color: #cfe2ff;
+  color: #0a3878;
+  border: 1px solid #6ea8fe;
+}
+
+/* Paper links */
+.paper-links a {
+  color: #2c5f8a;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-left: 6px;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+  color: #1a3d5c;
+}
+
+/* Abstract expand/collapse */
+details {
+  padding: 2px 0;
+  border-radius: 4px;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+details[open] {
+  background: #f8f9fa;
+  border-left: 3px solid #2c5f8a;
+  padding-left: 12px;
+}
+
+details summary {
+  cursor: pointer;
+  color: #666;
+  font-style: italic;
+}
+
+details summary:hover {
+  color: #2c5f8a;
+}
+
+/* Section spacing */
+h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #dee2e6;
+}
