@@ -28,7 +28,7 @@ Quantitative research relies heavily on coding, and coding errors are relatively
 </p></details>
 </li>
 
-<li>"Long-term effects of a public school management program" <i>(with <a href="https://sites.google.com/site/brunoferman" target="_blank">Bruno Ferman</a>, André Portela Souza, and Geraldo Silva Filho)</i>, <i>April 2025</i>. <span class="status-badge badge-submitted">Submitted</span> <span class="paper-links"><a href="https://lucasfinamor.github.io/files/PJF_paper.pdf" target="_blank">[Manuscript]</a></span>
+<li>"Long-term effects of a public school management program" <i>(with <a href="https://sites.google.com/site/brunoferman" target="_blank">Bruno Ferman</a>, André Portela Souza, and Geraldo Silva Filho)</i>, <i>April 2025</i>. <span class="status-badge badge-rr">R&R @ Journal of Human Resources</span> <span class="paper-links"><a href="https://lucasfinamor.github.io/files/PJF_paper.pdf" target="_blank">[Manuscript]</a></span>
 <details><summary>(Abstract)</summary>
 <p style="font-size:10pt" align="justify">
 While a substantial body of research documents a positive correlation between school management practices and student outcomes, experimental evidence on their causal effects --- particularly over the long term --- remains limited. We exploit the randomized implementation of "Jovem de Futuro," a management program implemented in Brazilian public high schools. Drawing on rich administrative data, we follow students' educational and labor market trajectories over fifteen years. We find short-term improvements in test scores and high school completion. In the long run, however, the program yields null to modest effects on college enrollment and graduation, labor market participation, and earnings.
@@ -78,7 +78,6 @@ We test whether changes in unemployment insurance (UI) benefit generosity under 
 <span style="font-size:10pt"> Media coverage: <a href="https://www.cnbc.com/2021/01/12/600-unemployment-boost-backed-by-ron-wyden-not-a-work-disincentive.html" target="_blank">CNBC</a>, <a href="https://time.com/6078388/myth-generous-unemployment-benefits/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fideas+%28TIME+Ideas%29" target="_blank">Time</a>, <a href="https://ca.news.yahoo.com/u-spends-less-nearly-every-164720852.html" target="_blank">Yahoo Canada</a>, <a href="https://newrepublic.com/article/160837/case-2000-checks" target="_blank">New Republic</a>, and <a href="https://plu.mx/plum/a/news?doi=10.1016/j.econlet.2020.109722&theme=plum-sciencedirect-theme&hideUsage=true" target="_blank">4 others</a>
 </span>
 </li>
-
 
 </ol>
 
