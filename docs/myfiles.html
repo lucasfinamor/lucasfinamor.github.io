@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Vault - Secure Storage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        label {
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+
+        input[type="password"],
+        input[type="file"],
+        input[type="text"] {
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="password"]:focus,
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-size: 14px;
+            padding: 10px;
+            background: #fee;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .error.show {
+            display: block;
+        }
+
+        .success {
+            color: #27ae60;
+            font-size: 14px;
+            padding: 10px;
+            background: #efe;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .success.show {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .file-manager {
+            margin-top: 30px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumb-item {
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .breadcrumb-item:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb-separator {
+            color: #999;
+        }
+
+        .upload-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .upload-section h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .upload-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .upload-tab {
+            padding: 8px 16px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            color: #666;
+            transition: all 0.2s;
+        }
+
+        .upload-tab.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .upload-tab:hover:not(.active) {
+            border-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .file-list {
+            margin-top: 20px;
+        }
+
+        .file-list h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            transition: background 0.2s;
+            cursor: pointer;
+        }
+
+        .file-item:hover {
+            background: #e9ecef;
+        }
+
+        .file-item.folder {
+            background: #e3f2fd;
+        }
+
+        .file-item.folder:hover {
+            background: #bbdefb;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+        }
+
+        .file-icon {
+            font-size: 24px;
+        }
+
+        .file-details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .file-name {
+            font-weight: 500;
+            color: #333;
+            word-break: break-all;
+        }
+
+        .file-meta {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-download,
+        .btn-delete,
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-download {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-download:hover {
+            background: #218838;
+        }
+
+        .btn-delete {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background: #c82333;
+        }
+
+        .logout-btn {
+            background: #6c757d;
+            margin-top: 20px;
+        }
+
+        .logout-btn:hover {
+            background: #5a6268;
+        }
+
+        .loading {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+        }
+
+        .progress {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #667eea;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .modal-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .upload-progress-list {
+            margin-top: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .upload-progress-item {
+            padding: 8px;
+            background: white;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .upload-progress-item.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .upload-progress-item.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div id="loginSection">
+            <h1>🔐 File Vault</h1>
+            <p class="subtitle">Secure file storage with authentication</p>
+            
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required autofocus>
+                </div>
+                <button type="submit" id="loginBtn">Login</button>
+                <div class="error" id="loginError"></div>
+            </form>
+        </div>
+
+        <!-- File Manager Section -->
+        <div id="fileManager" class="hidden">
+            <h1>📁 Your Files</h1>
+            <p class="subtitle">Upload and manage your files securely</p>
+
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb" id="breadcrumb"></div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn-secondary" id="createFolderBtn">📁 New Folder</button>
+                <button class="btn-secondary" id="refreshBtn">🔄 Refresh</button>
+            </div>
+
+            <div class="upload-section">
+                <h2>Upload Files</h2>
+                
+                <!-- Upload Tabs -->
+                <div class="upload-tabs">
+                    <div class="upload-tab active" data-tab="single">Single File</div>
+                    <div class="upload-tab" data-tab="folder">Entire Folder</div>
+                </div>
+
+                <!-- Single File Upload -->
+                <div class="tab-content active" id="singleFileTab">
+                    <form id="uploadForm">
+                        <div class="form-group">
+                            <label for="fileInput">Choose file to upload</label>
+                            <input type="file" id="fileInput" required>
+                        </div>
+                        <button type="submit" id="uploadBtn">Upload File</button>
+                        <div class="progress" id="uploadProgress"></div>
+                        <div class="success" id="uploadSuccess"></div>
+                        <div class="error" id="uploadError"></div>
+                    </form>
+                </div>
+
+                <!-- Folder Upload -->
+                <div class="tab-content" id="folderTab">
+                    <form id="uploadFolderForm">
+                        <div class="form-group">
+                            <label for="folderInput">Choose folder to upload</label>
+                            <input type="file" id="folderInput" webkitdirectory directory multiple>
+                        </div>
+                        <button type="submit" id="uploadFolderBtn">Upload Folder</button>
+                        <div class="progress" id="folderUploadProgress"></div>
+                        <div id="folderUploadProgressList" class="upload-progress-list"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="file-list">
+                <h2>Files & Folders</h2>
+                <div id="fileListContainer">
+                    <div class="loading">Loading files...</div>
+                </div>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <!-- Create Folder Modal -->
+    <div class="modal" id="createFolderModal">
+        <div class="modal-content">
+            <div class="modal-header">Create New Folder</div>
+            <form id="createFolderForm">
+                <div class="form-group">
+                    <label for="folderNameInput">Folder Name</label>
+                    <input type="text" id="folderNameInput" placeholder="Enter folder name" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn-secondary" id="cancelFolderBtn">Cancel</button>
+                    <button type="submit">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'https://file-vault-worker.lf-vault.workers.dev';
+        
+        let authToken = null;
+        let currentPath = '';
+
+        // Tab switching
+        document.querySelectorAll('.upload-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.upload-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                const tabName = tab.dataset.tab;
+                document.getElementById(`${tabName}${tabName === 'single' ? 'FileTab' : 'Tab'}`).classList.add('active');
+            });
+        });
+
+        // Login handler
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const loginBtn = document.getElementById('loginBtn');
+            const errorDiv = document.getElementById('loginError');
+            const password = document.getElementById('password').value;
+            
+            loginBtn.disabled = true;
+            loginBtn.textContent = 'Logging in...';
+            errorDiv.classList.remove('show');
+            
+            try {
+                const response = await fetch(`${API_URL}/api/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ password })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    authToken = data.token;
+                    localStorage.setItem('authToken', authToken);
+                    
+                    document.getElementById('loginSection').classList.add('hidden');
+                    document.getElementById('fileManager').classList.remove('hidden');
+                    document.getElementById('password').value = '';
+                    
+                    loadFiles();
+                } else {
+                    errorDiv.textContent = 'Invalid password. Please try again.';
+                    errorDiv.classList.add('show');
+                }
+            } catch (error) {
+                errorDiv.textContent = 'Login failed. Please check your connection.';
+                errorDiv.classList.add('show');
+                console.error('Login error:', error);
+            } finally {
+                loginBtn.disabled = false;
+                loginBtn.textContent = 'Login';
+            }
+        });
+
+        // Logout
+        document.getElementById('logoutBtn').addEventListener('click', async () => {
+            if (authToken) {
+                try {
+                    await fetch(`${API_URL}/api/logout`, {
+                        method: 'POST',
+                        headers: { 'Authorization': `Bearer ${authToken}` }
+                    });
+                } catch (error) {
+                    console.error('Logout error:', error);
+                }
+            }
+            
+            authToken = null;
+            currentPath = '';
+            localStorage.removeItem('authToken');
+            document.getElementById('fileManager').classList.add('hidden');
+            document.getElementById('loginSection').classList.remove('hidden');
+        });
+
+        // Breadcrumb navigation
+        function updateBreadcrumb() {
+            const breadcrumb = document.getElementById('breadcrumb');
+            const parts = currentPath.split('/').filter(p => p);
+            
+            let html = '<span class="breadcrumb-item" onclick="navigateToPath(\'\')">🏠 Home</span>';
+            
+            let path = '';
+            parts.forEach((part, index) => {
+                path += part + '/';
+                html += '<span class="breadcrumb-separator">/</span>';
+                html += `<span class="breadcrumb-item" onclick="navigateToPath('${path}')">${part}</span>`;
+            });
+            
+            breadcrumb.innerHTML = html;
+        }
+
+        function navigateToPath(path) {
+            currentPath = path;
+            loadFiles();
+        }
+
+        // Load files
+        async function loadFiles() {
+            const container = document.getElementById('fileListContainer');
+            container.innerHTML = '<div class="loading"><span class="spinner"></span>Loading files...</div>';
+            
+            updateBreadcrumb();
+            
+            try {
+                const response = await fetch(`${API_URL}/api/files?prefix=${encodeURIComponent(currentPath)}`, {
+                    headers: { 'Authorization': `Bearer ${authToken}` }
+                });
+                
+                if (!response.ok) throw new Error('Failed to load files');
+                
+                const data = await response.json();
+                
+                if (data.files.length === 0) {
+                    container.innerHTML = '<div class="loading">No files or folders yet.</div>';
+                    return;
+                }
+                
+                container.innerHTML = '';
+                data.files.forEach(file => displayFile(file));
+                
+            } catch (error) {
+                console.error('Error loading files:', error);
+                container.innerHTML = '<div class="error show">Error loading files. Please try again.</div>';
+            }
+        }
+
+        // Display file or folder
+        function displayFile(file) {
+            const container = document.getElementById('fileListContainer');
+            const fileItem = document.createElement('div');
+            fileItem.className = `file-item ${file.isFolder ? 'folder' : ''}`;
+            
+            if (file.isFolder) {
+                fileItem.innerHTML = `
+                    <div class="file-info" onclick="navigateToPath('${file.name}')">
+                        <div class="file-icon">📁</div>
+                        <div class="file-details">
+                            <div class="file-name">${escapeHtml(file.displayName)}</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <button class="btn-delete" onclick="event.stopPropagation(); deleteItem('${escapeHtml(file.name)}', true)">Delete</button>
+                    </div>
+                `;
+            } else {
+                const size = formatFileSize(file.size);
+                const date = new Date(file.uploaded).toLocaleDateString();
+                
+                fileItem.innerHTML = `
+                    <div class="file-info">
+                        <div class="file-icon">📄</div>
+                        <div class="file-details">
+                            <div class="file-name">${escapeHtml(file.displayName)}</div>
+                            <div class="file-meta">${size} • ${date}</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <button class="btn-download" onclick="downloadFile('${escapeHtml(file.name)}')">Download</button>
+                        <button class="btn-delete" onclick="deleteItem('${escapeHtml(file.name)}', false)">Delete</button>
+                    </div>
+                `;
+            }
+            
+            container.appendChild(fileItem);
+        }
+
+        // Upload single file
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('fileInput');
+            const uploadBtn = document.getElementById('uploadBtn');
+            const progress = document.getElementById('uploadProgress');
+            const successDiv = document.getElementById('uploadSuccess');
+            const errorDiv = document.getElementById('uploadError');
+            
+            const file = fileInput.files[0];
+            if (!file) return;
+            
+            uploadBtn.disabled = true;
+            progress.innerHTML = '<span class="spinner"></span>Uploading...';
+            progress.style.display = 'block';
+            successDiv.classList.remove('show');
+            errorDiv.classList.remove('show');
+            
+            try {
+                const formData = new FormData();
+                formData.append('file', file);
+                formData.append('folder', currentPath);
+                
+                const response = await fetch(`${API_URL}/api/upload`, {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${authToken}` },
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    successDiv.textContent = `File "${file.name}" uploaded successfully!`;
+                    successDiv.classList.add('show');
+                    fileInput.value = '';
+                    progress.style.display = 'none';
+                    
+                    setTimeout(() => {
+                        successDiv.classList.remove('show');
+                        loadFiles();
+                    }, 2000);
+                } else {
+                    throw new Error(data.error || 'Upload failed');
+                }
+                
+            } catch (error) {
+                console.error('Upload error:', error);
+                errorDiv.textContent = 'Upload failed. Please try again.';
+                errorDiv.classList.add('show');
+                progress.style.display = 'none';
+            } finally {
+                uploadBtn.disabled = false;
+            }
+        });
+
+        // Upload entire folder
+        document.getElementById('uploadFolderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const folderInput = document.getElementById('folderInput');
+            const uploadBtn = document.getElementById('uploadFolderBtn');
+            const progress = document.getElementById('folderUploadProgress');
+            const progressList = document.getElementById('folderUploadProgressList');
+            
+            const files = Array.from(folderInput.files);
+            if (files.length === 0) return;
+            
+            uploadBtn.disabled = true;
+            progress.innerHTML = `<span class="spinner"></span>Uploading ${files.length} files...`;
+            progress.style.display = 'block';
+            progressList.innerHTML = '';
+            
+            let successCount = 0;
+            let errorCount = 0;
+            
+            for (const file of files) {
+                const progressItem = document.createElement('div');
+                progressItem.className = 'upload-progress-item';
+                progressItem.textContent = `Uploading: ${file.webkitRelativePath}`;
+                progressList.appendChild(progressItem);
+                
+                try {
+                    const formData = new FormData();
+                    formData.append('file', file);
+                    formData.append('folder', currentPath + file.webkitRelativePath.substring(0, file.webkitRelativePath.lastIndexOf('/') + 1));
+                    
+                    const response = await fetch(`${API_URL}/api/upload`, {
+                        method: 'POST',
+                        headers: { 'Authorization': `Bearer ${authToken}` },
+                        body: formData
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        progressItem.textContent = `✓ ${file.webkitRelativePath}`;
+                        progressItem.classList.add('success');
+                        successCount++;
+                    } else {
+                        throw new Error(data.error);
+                    }
+                } catch (error) {
+                    console.error('Upload error:', error);
+                    progressItem.textContent = `✗ ${file.webkitRelativePath} - Failed`;
+                    progressItem.classList.add('error');
+                    errorCount++;
+                }
+            }
+            
+            progress.innerHTML = `Upload complete: ${successCount} succeeded, ${errorCount} failed`;
+            uploadBtn.disabled = false;
+            folderInput.value = '';
+            
+            setTimeout(() => {
+                loadFiles();
+            }, 2000);
+        });
+
+        // Create folder
+        document.getElementById('createFolderBtn').addEventListener('click', () => {
+            document.getElementById('createFolderModal').classList.add('show');
+            document.getElementById('folderNameInput').value = '';
+            document.getElementById('folderNameInput').focus();
+        });
+
+        document.getElementById('cancelFolderBtn').addEventListener('click', () => {
+            document.getElementById('createFolderModal').classList.remove('show');
+        });
+
+        document.getElementById('createFolderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const folderName = document.getElementById('folderNameInput').value.trim();
+            if (!folderName) return;
+            
+            try {
+                const folderPath = currentPath + folderName + '/';
+                
+                const response = await fetch(`${API_URL}/api/folder`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ folderPath })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById('createFolderModal').classList.remove('show');
+                    loadFiles();
+                } else {
+                    alert('Failed to create folder');
+                }
+            } catch (error) {
+                console.error('Error creating folder:', error);
+                alert('Failed to create folder');
+            }
+        });
+
+        // Refresh
+        document.getElementById('refreshBtn').addEventListener('click', () => {
+            loadFiles();
+        });
+
+        // Download file
+        async function downloadFile(filename) {
+            try {
+                const response = await fetch(`${API_URL}/api/download/${encodeURIComponent(filename)}`, {
+                    headers: { 'Authorization': `Bearer ${authToken}` }
+                });
+                
+                if (!response.ok) throw new Error('Download failed');
+                
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+                
+            } catch (error) {
+                console.error('Download error:', error);
+                alert('Download failed. Please try again.');
+            }
+        }
+
+        // Delete file or folder
+        async function deleteItem(path, isFolder) {
+            const itemType = isFolder ? 'folder and all its contents' : 'file';
+            if (!confirm(`Are you sure you want to delete this ${itemType}?`)) return;
+            
+            try {
+                const response = await fetch(`${API_URL}/api/delete/${encodeURIComponent(path)}`, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': `Bearer ${authToken}` }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    loadFiles();
+                } else {
+                    throw new Error('Delete failed');
+                }
+                
+            } catch (error) {
+                console.error('Delete error:', error);
+                alert('Delete failed. Please try again.');
+            }
+        }
+
+        // Utility functions
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Check for existing session
+        window.addEventListener('load', () => {
+            const storedToken = localStorage.getItem('authToken');
+            if (storedToken) {
+                authToken = storedToken;
+                fetch(`${API_URL}/api/files`, {
+                    headers: { 'Authorization': `Bearer ${authToken}` }
+                }).then(response => {
+                    if (response.ok) {
+                        document.getElementById('loginSection').classList.add('hidden');
+                        document.getElementById('fileManager').classList.remove('hidden');
+                        loadFiles();
+                    } else {
+                        localStorage.removeItem('authToken');
+                        authToken = null;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
