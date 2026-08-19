@@ -4,3 +4,5 @@ cd /Users/lucasfinamor/Documents/GitHub/lucasfinamor.github.io
 quarto render
 
 cp -R files docs
+
+cp myfiles.html docs/myfiles.html
