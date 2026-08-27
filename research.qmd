@@ -94,12 +94,16 @@ We test whether changes in unemployment insurance (UI) benefit generosity under 
 
 ### Published in Brazilian Journals
 
+<ol>
 <li>"School closures and educational path: how the Covid-19 pandemic affected transitions to college" <i>(with <a href="https://sites.google.com/site/festevang/" target="_blank">Fernanda Estevan</a>)</i>, <span class="status-badge badge-accepted">Accepted @ Brazilian Review of Econometrics </span> <span class="paper-links"><a href="https://arxiv.org/pdf/2210.00138.pdf" target="_blank">[Manuscript]</a></span>
 <details><summary>(Abstract)</summary>
 <p style="font-size:10pt" align="justify">
 We investigate the impact of the Covid-19 pandemic on the transition between high school and college in Brazil. Using microdata from the universe of students that applied to a selective university, we document how the Covid-19 shock increased enrollment for students in the top 10% high-quality public and private high schools. This increase comes at the expense of graduates from relatively lower-quality schools. Furthermore, this effect is entirely driven by applicants who were at high school during the Covid pandemic. The effect is large and completely offsets the gains in student background diversity achieved by a bold quota policy implemented years before Covid. These results suggest that not only students from underprivileged backgrounds endured larger negative effects on learning during the pandemic, but they also experienced a stall in their educational paths.
 </p></details>
 </li>
+</ol>
+
+</br>
 
 ## Selected Work in Progress
 
