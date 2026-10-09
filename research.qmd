@@ -51,9 +51,7 @@ Why do so many informal workers earn the minimum wage? We argue that this phenom
 
 <ol>
 
-<li>"Spatial Protection Spillovers and the Equilibrium of Crime and Policing" <i>(with <a href="https://sites.google.com/view/eduardoferraz/home" target="_blank">Eduardo Ferraz</a>)</i>, <b>Journal of Economic Theory</b>, <i>forthcoming</i>
-
-<span class="paper-links"><a href="https://lucasfinamor.github.io/files/Police_and_Thieves.pdf" target="_blank">[Manuscript]</a></span>
+<li>"Spatial Protection Spillovers and the Equilibrium of Crime and Policing" <i>(with <a href="https://sites.google.com/view/eduardoferraz/home" target="_blank">Eduardo Ferraz</a>)</i>, <b>Journal of Economic Theory</b>, <i>forthcoming</i> <span class="paper-links"><a href="https://lucasfinamor.github.io/files/Police_and_Thieves.pdf" target="_blank">[Manuscript]</a></span>
 <details><summary>(Abstract)</summary>
 <p style="font-size:10pt" align="justify">
 Spatial heterogeneity in crime suggests that location is a key choice variable in criminal behavior and police allocation.
