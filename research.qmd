@@ -35,19 +35,6 @@ While a substantial body of research documents a positive correlation between sc
 </p></details>
 </li>
 
-<li>"Spatial Protection Spillovers and the Equilibrium of Crime and Policing" <i>(with <a href="https://sites.google.com/view/eduardoferraz/home" target="_blank">Eduardo Ferraz</a>)</i>, <i>March 2026</i>. <span class="status-badge badge-accepted">Cond. Accepted @ Journal of Economic Theory</span><span class="paper-links"><a href="https://lucasfinamor.github.io/files/Police_and_Thieves.pdf" target="_blank">[Manuscript]</a></span>
-<details><summary>(Abstract)</summary>
-<p style="font-size:10pt" align="justify">
-Spatial heterogeneity in crime suggests that location is a key choice variable in criminal behavior and police allocation.
-To capture this, we develop a topological model in which criminals and the police interact strategically across space. 
-The key departure from the existing literature is that distance matters: the coverage radius of a police unit generates spatial spillovers, so a location can receive protection from nearby patrols. 
-This is in sharp contrast with discrete spatial models, where each discrete partition is isolated from its surroundings, biasing the equilibrium police allocation. 
-We analytically characterize this bias and, more generally, demonstrate how spillovers affect the equilibrium police allocation. 
-In particular, as spillovers increase: (i) more (fewer) units are allocated at local maxima (minima) of crime; (ii) the location where units are more concentrated shifts toward the steepest side of the crime distribution; and (iii) the entropy of the police spatial density decreases. 
-Jointly, our results point to the essential role of spatial spillovers in the equilibrium determination of crime and police allocation.
-</p></details>
-</li>
-
 <li>"How Far Does the Lighthouse Shine? Bunching at the
 Minimum Wage and Informality" <i>(with Vinícius Nery)</i>, <i>June 2026</i>. <a href="https://lucasfinamor.github.io/files/Finamor_Nery.pdf" target="_blank">[Manuscript]</a></span>
 <details><summary>(Abstract)</summary>
@@ -63,6 +50,21 @@ Why do so many informal workers earn the minimum wage? We argue that this phenom
 ## Published Articles
 
 <ol>
+
+<li>"Spatial Protection Spillovers and the Equilibrium of Crime and Policing" <i>(with <a href="https://sites.google.com/view/eduardoferraz/home" target="_blank">Eduardo Ferraz</a>)</i>, <b>Journal of Economic Theory</b>, <i>forthcoming</i>
+
+<span class="paper-links"><a href="https://lucasfinamor.github.io/files/Police_and_Thieves.pdf" target="_blank">[Manuscript]</a></span>
+<details><summary>(Abstract)</summary>
+<p style="font-size:10pt" align="justify">
+Spatial heterogeneity in crime suggests that location is a key choice variable in criminal behavior and police allocation.
+To capture this, we develop a topological model in which criminals and the police interact strategically across space. 
+The key departure from the existing literature is that distance matters: the coverage radius of a police unit generates spatial spillovers, so a location can receive protection from nearby patrols. 
+This is in sharp contrast with discrete spatial models, where each discrete partition is isolated from its surroundings, biasing the equilibrium police allocation. 
+We analytically characterize this bias and, more generally, demonstrate how spillovers affect the equilibrium police allocation. 
+In particular, as spillovers increase: (i) more (fewer) units are allocated at local maxima (minima) of crime; (ii) the location where units are more concentrated shifts toward the steepest side of the crime distribution; and (iii) the entropy of the police spatial density decreases. 
+Jointly, our results point to the essential role of spatial spillovers in the equilibrium determination of crime and police allocation.
+</p></details>
+</li>
 
 <li>"Youth Subjective Life Expectancy and Early Labor Market Choices", <b>Demography</b>, <i>63 (4): 1277–1304</i> (2026). <span class="paper-links"><a href="https://read.dukeupress.edu/demography/article/doi/10.1215/00703370-12792522" target="_blank">[Published Version]</a> 
 <span class="paper-links"><a href="https://lucasfinamor.github.io/files/finamor_youthSLE.pdf" target="_blank">[Open Access Manuscript]</a></span>
@@ -95,7 +97,7 @@ We test whether changes in unemployment insurance (UI) benefit generosity under 
 ### Published in Brazilian Journals
 
 <ol>
-<li>"School closures and educational path: how the Covid-19 pandemic affected transitions to college" <i>(with <a href="https://sites.google.com/site/festevang/" target="_blank">Fernanda Estevan</a>)</i>, <span class="status-badge badge-accepted">Accepted @ Brazilian Review of Econometrics </span> <span class="paper-links"><a href="https://arxiv.org/pdf/2210.00138.pdf" target="_blank">[Manuscript]</a></span>
+<li>"School closures and educational path: how the Covid-19 pandemic affected transitions to college" <i>(with <a href="https://sites.google.com/site/festevang/" target="_blank">Fernanda Estevan</a>)</i>, <b>Brazilian Review of Econometrics</b>, <i>forthcoming</i> <span class="paper-links"><a href="https://arxiv.org/pdf/2210.00138.pdf" target="_blank">[Manuscript]</a></span>
 <details><summary>(Abstract)</summary>
 <p style="font-size:10pt" align="justify">
 We investigate the impact of the Covid-19 pandemic on the transition between high school and college in Brazil. Using microdata from the universe of students that applied to a selective university, we document how the Covid-19 shock increased enrollment for students in the top 10% high-quality public and private high schools. This increase comes at the expense of graduates from relatively lower-quality schools. Furthermore, this effect is entirely driven by applicants who were at high school during the Covid pandemic. The effect is large and completely offsets the gains in student background diversity achieved by a bold quota policy implemented years before Covid. These results suggest that not only students from underprivileged backgrounds endured larger negative effects on learning during the pandemic, but they also experienced a stall in their educational paths.
